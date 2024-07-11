@@ -229,3 +229,9 @@ super + e
 super + {r,q}
     {redshift -P -O 4000, redshift -x}
 
+# MPD play/next/previous
+ctrl + alt + {p,j,k}
+    {mpc toggle,mpc next, mpc prev}
+
+
+
