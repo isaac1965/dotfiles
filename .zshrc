@@ -131,8 +131,8 @@ alias musica="ncmpcpp"
 alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
 alias cat=bat
-alias descargar='yt-dlp --extract-audio --audio-format mp3'
-alias descargarV='yt-dlp -f '\''bv[height<=720][ext=mp4]+ba[ext=m4a]'\'''
+alias music-dl='noglob yt-dlp -x --audio-format mp3 --audio-quality 0 -o "~/Music/%(title)s.%(ext)s"'
+alias video-dl='noglob yt-dlp -f "bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -o "~/Videos/%(title)s.%(ext)s"'
 alias conectarI='nmcli dev wifi connect ISM password ct6c67cdhmffvt'
 alias f='find . -type f | fzf | xargs nvim'
 
